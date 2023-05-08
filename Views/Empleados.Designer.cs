@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleados));
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnAgregar = new System.Windows.Forms.ToolStripButton();
@@ -44,7 +45,7 @@
             this.lblSexo = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.txtCorreoElectronico = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtApellidoMaterno = new System.Windows.Forms.TextBox();
             this.lblApellidoMaterno = new System.Windows.Forms.Label();
@@ -73,7 +74,7 @@
             this.panel1.Controls.Add(this.lblSexo);
             this.panel1.Controls.Add(this.txtTelefono);
             this.panel1.Controls.Add(this.lblTelefono);
-            this.panel1.Controls.Add(this.txtCorreoElectronico);
+            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.lblEmail);
             this.panel1.Controls.Add(this.txtApellidoMaterno);
             this.panel1.Controls.Add(this.lblApellidoMaterno);
@@ -85,7 +86,7 @@
             this.panel1.Controls.Add(this.lblID);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(687, 339);
+            this.panel1.Size = new System.Drawing.Size(387, 339);
             this.panel1.TabIndex = 0;
             // 
             // toolStrip1
@@ -98,7 +99,7 @@
             this.btnBuscar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(687, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(387, 47);
             this.toolStrip1.TabIndex = 20;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -110,6 +111,7 @@
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(44, 44);
             this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEditar
             // 
@@ -119,6 +121,7 @@
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(44, 44);
             this.btnEditar.Text = "Editar";
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // toolStripSeparator1
             // 
@@ -133,6 +136,7 @@
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(44, 44);
             this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // dtFechaNacimiento
             // 
@@ -155,6 +159,10 @@
             // 
             this.cbEstatus.BackColor = System.Drawing.SystemColors.Control;
             this.cbEstatus.FormattingEnabled = true;
+            this.cbEstatus.Items.AddRange(new object[] {
+            "Seleccione un Estatus",
+            "Activo",
+            "Baja"});
             this.cbEstatus.Location = new System.Drawing.Point(129, 278);
             this.cbEstatus.Name = "cbEstatus";
             this.cbEstatus.Size = new System.Drawing.Size(250, 21);
@@ -191,6 +199,10 @@
             // 
             this.cbSexo.BackColor = System.Drawing.SystemColors.Control;
             this.cbSexo.FormattingEnabled = true;
+            this.cbSexo.Items.AddRange(new object[] {
+            "Seleccione un Sexo",
+            "Masculino",
+            "Femenino"});
             this.cbSexo.Location = new System.Drawing.Point(128, 218);
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(250, 21);
@@ -212,6 +224,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(251, 20);
             this.txtTelefono.TabIndex = 11;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // lblTelefono
             // 
@@ -222,13 +235,13 @@
             this.lblTelefono.TabIndex = 10;
             this.lblTelefono.Text = "Teléfono:";
             // 
-            // txtCorreoElectronico
+            // txtEmail
             // 
-            this.txtCorreoElectronico.BackColor = System.Drawing.SystemColors.Control;
-            this.txtCorreoElectronico.Location = new System.Drawing.Point(128, 168);
-            this.txtCorreoElectronico.Name = "txtCorreoElectronico";
-            this.txtCorreoElectronico.Size = new System.Drawing.Size(251, 20);
-            this.txtCorreoElectronico.TabIndex = 9;
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
+            this.txtEmail.Location = new System.Drawing.Point(128, 168);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(251, 20);
+            this.txtEmail.TabIndex = 9;
             // 
             // lblEmail
             // 
@@ -237,7 +250,7 @@
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(97, 13);
             this.lblEmail.TabIndex = 8;
-            this.lblEmail.Text = "Correo Electronico:";
+            this.lblEmail.Text = "Correo Electrónico:";
             // 
             // txtApellidoMaterno
             // 
@@ -263,6 +276,7 @@
             this.txtApellidoPaterno.Name = "txtApellidoPaterno";
             this.txtApellidoPaterno.Size = new System.Drawing.Size(251, 20);
             this.txtApellidoPaterno.TabIndex = 5;
+            this.txtApellidoPaterno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoPaterno_KeyPress);
             // 
             // lblApellidoPaterno
             // 
@@ -280,6 +294,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(251, 20);
             this.txtNombre.TabIndex = 3;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // lblNombre
             // 
@@ -297,6 +312,8 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(148, 20);
             this.txtID.TabIndex = 1;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
+            this.txtID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtID_KeyPress);
             // 
             // lblID
             // 
@@ -309,35 +326,40 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(293, 357);
+            this.btnGuardar.Location = new System.Drawing.Point(86, 357);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(200, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(150, 23);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(499, 357);
+            this.btnCancelar.Location = new System.Drawing.Point(242, 357);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(200, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(150, 23);
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 395);
+            this.ClientSize = new System.Drawing.Size(423, 395);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
+            this.Load += new System.EventHandler(this.Empleados_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -359,7 +381,7 @@
         private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label lblTelefono;
-        private System.Windows.Forms.TextBox txtCorreoElectronico;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtApellidoMaterno;
         private System.Windows.Forms.Label lblApellidoMaterno;
