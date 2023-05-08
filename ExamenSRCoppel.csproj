@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Classes\Connection\dbConnection.cs" />
     <Compile Include="Classes\Controllers\Empleado.cs" />
+    <Compile Include="Classes\Controllers\Movimientos.cs" />
     <Compile Include="Classes\Controllers\Roles.cs" />
     <Compile Include="Views\Empleados.cs">
       <SubType>Form</SubType>
