@@ -43,8 +43,8 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnAgregar = new System.Windows.Forms.ToolStripButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnAgregar = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -193,15 +193,6 @@
             this.toolStrip1.TabIndex = 12;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAgregar.Image = global::ExamenSRCoppel.Properties.Resources.Agregar40;
-            this.btnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(44, 44);
-            this.btnAgregar.Text = "Agregar";
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "yyyy";
@@ -210,6 +201,15 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(80, 20);
             this.dateTimePicker1.TabIndex = 13;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnAgregar.Image = global::ExamenSRCoppel.Properties.Resources.Agregar40;
+            this.btnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(44, 44);
+            this.btnAgregar.Text = "Agregar";
             // 
             // Movimientos
             // 
@@ -222,6 +222,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Movimientos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movimientos";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

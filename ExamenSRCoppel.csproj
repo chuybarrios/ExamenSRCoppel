@@ -72,6 +72,18 @@
     <Compile Include="Views\Movimientos.Designer.cs">
       <DependentUpon>Movimientos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ConsultaPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ConsultaPagos.Designer.cs">
+      <DependentUpon>ConsultaPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Pagos.Designer.cs">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -93,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Movimientos.resx">
       <DependentUpon>Movimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ConsultaPagos.resx">
+      <DependentUpon>ConsultaPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pagos.resx">
+      <DependentUpon>Pagos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -117,6 +135,7 @@
     <Content Include="Icon\Agregar40.bmp" />
     <Content Include="Icon\Buscar40.bmp" />
     <Content Include="Icon\Editar40.bmp" />
+    <Content Include="Icon\pago-en-efectivo.png" />
     <Content Include="Icon\Rinku_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

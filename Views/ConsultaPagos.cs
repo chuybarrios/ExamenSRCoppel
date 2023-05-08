@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace ExamenSRCoppel.Views
 {
-    public partial class Login : Form
+    public partial class ConsultaPagos : Form
     {
-        public Login()
+        public ConsultaPagos()
         {
             InitializeComponent();
-        }
-
-        private void btnAcceder_Click(object sender, EventArgs e)
-        {
-            Menu menu = new Menu();
-            //Empleados empleados = new Empleados();
-            this.Hide();
-            menu.ShowDialog();
-            this.Close();
         }
     }
 }

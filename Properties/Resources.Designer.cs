@@ -93,6 +93,16 @@ namespace ExamenSRCoppel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pago_en_efectivo {
+            get {
+                object obj = ResourceManager.GetObject("pago-en-efectivo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rinku {
             get {
                 object obj = ResourceManager.GetObject("Rinku", resourceCulture);

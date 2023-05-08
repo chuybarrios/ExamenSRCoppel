@@ -87,6 +87,7 @@
             this.administrarMovimientosToolStripMenuItem1.Name = "administrarMovimientosToolStripMenuItem1";
             this.administrarMovimientosToolStripMenuItem1.Size = new System.Drawing.Size(209, 22);
             this.administrarMovimientosToolStripMenuItem1.Text = "Administrar Movimientos";
+            this.administrarMovimientosToolStripMenuItem1.Click += new System.EventHandler(this.administrarMovimientosToolStripMenuItem1_Click);
             // 
             // administrarPagosToolStripMenuItem
             // 
@@ -100,14 +101,16 @@
             // pagosToolStripMenuItem
             // 
             this.pagosToolStripMenuItem.Name = "pagosToolStripMenuItem";
-            this.pagosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.pagosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pagosToolStripMenuItem.Text = "Administrar Pagos";
+            this.pagosToolStripMenuItem.Click += new System.EventHandler(this.pagosToolStripMenuItem_Click);
             // 
             // consultarPagosToolStripMenuItem
             // 
             this.consultarPagosToolStripMenuItem.Name = "consultarPagosToolStripMenuItem";
-            this.consultarPagosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.consultarPagosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarPagosToolStripMenuItem.Text = "Consultar Pagos";
+            this.consultarPagosToolStripMenuItem.Click += new System.EventHandler(this.consultarPagosToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
