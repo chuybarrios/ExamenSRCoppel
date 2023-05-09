@@ -101,7 +101,7 @@
             // 
             // txtCantidadEntregas
             // 
-            this.txtCantidadEntregas.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCantidadEntregas.BackColor = System.Drawing.SystemColors.Window;
             this.txtCantidadEntregas.Location = new System.Drawing.Point(130, 226);
             this.txtCantidadEntregas.Name = "txtCantidadEntregas";
             this.txtCantidadEntregas.Size = new System.Drawing.Size(271, 20);
@@ -128,7 +128,7 @@
             // 
             // cbMes
             // 
-            this.cbMes.BackColor = System.Drawing.SystemColors.Control;
+            this.cbMes.BackColor = System.Drawing.SystemColors.Window;
             this.cbMes.FormattingEnabled = true;
             this.cbMes.Items.AddRange(new object[] {
             "Seleccione un mes",
@@ -160,7 +160,7 @@
             // 
             // txtRol
             // 
-            this.txtRol.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRol.BackColor = System.Drawing.SystemColors.Window;
             this.txtRol.Location = new System.Drawing.Point(130, 123);
             this.txtRol.Name = "txtRol";
             this.txtRol.Size = new System.Drawing.Size(271, 20);
@@ -177,7 +177,7 @@
             // 
             // txtNombreEmpleado
             // 
-            this.txtNombreEmpleado.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNombreEmpleado.BackColor = System.Drawing.SystemColors.Window;
             this.txtNombreEmpleado.Location = new System.Drawing.Point(130, 92);
             this.txtNombreEmpleado.Name = "txtNombreEmpleado";
             this.txtNombreEmpleado.Size = new System.Drawing.Size(271, 20);
@@ -194,7 +194,7 @@
             // 
             // txtIDEmpleado
             // 
-            this.txtIDEmpleado.BackColor = System.Drawing.SystemColors.Control;
+            this.txtIDEmpleado.BackColor = System.Drawing.SystemColors.Window;
             this.txtIDEmpleado.Location = new System.Drawing.Point(130, 61);
             this.txtIDEmpleado.Name = "txtIDEmpleado";
             this.txtIDEmpleado.Size = new System.Drawing.Size(271, 20);

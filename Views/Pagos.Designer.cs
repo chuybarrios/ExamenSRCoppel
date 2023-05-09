@@ -379,11 +379,11 @@
             // lblTotalEntregas
             // 
             this.lblTotalEntregas.AutoSize = true;
-            this.lblTotalEntregas.Location = new System.Drawing.Point(11, 71);
+            this.lblTotalEntregas.Location = new System.Drawing.Point(4, 71);
             this.lblTotalEntregas.Name = "lblTotalEntregas";
-            this.lblTotalEntregas.Size = new System.Drawing.Size(79, 13);
+            this.lblTotalEntregas.Size = new System.Drawing.Size(94, 13);
             this.lblTotalEntregas.TabIndex = 25;
-            this.lblTotalEntregas.Text = "Total Entregas:";
+            this.lblTotalEntregas.Text = "Total de Entregas:";
             // 
             // txtTotalEntregas
             // 

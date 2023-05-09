@@ -50,9 +50,11 @@
     <Compile Include="Classes\Connection\dbConnection.cs" />
     <Compile Include="Classes\Controllers\Empleado.cs" />
     <Compile Include="Classes\Controllers\Impuestos.cs" />
+    <Compile Include="Classes\Controllers\Login.cs" />
     <Compile Include="Classes\Controllers\Movimientos.cs" />
     <Compile Include="Classes\Controllers\Pagos.cs" />
     <Compile Include="Classes\Controllers\Roles.cs" />
+    <Compile Include="Classes\Session\Usuario.cs" />
     <Compile Include="Views\Empleados.cs">
       <SubType>Form</SubType>
     </Compile>

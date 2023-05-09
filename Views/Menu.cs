@@ -49,5 +49,16 @@ namespace ExamenSRCoppel
             movimientos.ShowDialog();
             this.Close();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Text = Classes.Controllers.Login.usuario.Username;
+            menuStrip1.Focus();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

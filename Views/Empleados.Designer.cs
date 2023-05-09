@@ -157,7 +157,7 @@
             // 
             // cbEstatus
             // 
-            this.cbEstatus.BackColor = System.Drawing.SystemColors.Control;
+            this.cbEstatus.BackColor = System.Drawing.SystemColors.Window;
             this.cbEstatus.FormattingEnabled = true;
             this.cbEstatus.Items.AddRange(new object[] {
             "Seleccione un Estatus",
@@ -179,7 +179,7 @@
             // 
             // cbRol
             // 
-            this.cbRol.BackColor = System.Drawing.SystemColors.Control;
+            this.cbRol.BackColor = System.Drawing.SystemColors.Window;
             this.cbRol.FormattingEnabled = true;
             this.cbRol.Location = new System.Drawing.Point(128, 248);
             this.cbRol.Name = "cbRol";
@@ -197,7 +197,7 @@
             // 
             // cbSexo
             // 
-            this.cbSexo.BackColor = System.Drawing.SystemColors.Control;
+            this.cbSexo.BackColor = System.Drawing.SystemColors.Window;
             this.cbSexo.FormattingEnabled = true;
             this.cbSexo.Items.AddRange(new object[] {
             "Seleccione un Sexo",
@@ -219,7 +219,7 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTelefono.BackColor = System.Drawing.SystemColors.Window;
             this.txtTelefono.Location = new System.Drawing.Point(128, 194);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(251, 20);
@@ -237,7 +237,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Window;
             this.txtEmail.Location = new System.Drawing.Point(128, 168);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(251, 20);
@@ -254,7 +254,7 @@
             // 
             // txtApellidoMaterno
             // 
-            this.txtApellidoMaterno.BackColor = System.Drawing.SystemColors.Control;
+            this.txtApellidoMaterno.BackColor = System.Drawing.SystemColors.Window;
             this.txtApellidoMaterno.Location = new System.Drawing.Point(128, 145);
             this.txtApellidoMaterno.Name = "txtApellidoMaterno";
             this.txtApellidoMaterno.Size = new System.Drawing.Size(251, 20);
@@ -271,7 +271,7 @@
             // 
             // txtApellidoPaterno
             // 
-            this.txtApellidoPaterno.BackColor = System.Drawing.SystemColors.Control;
+            this.txtApellidoPaterno.BackColor = System.Drawing.SystemColors.Window;
             this.txtApellidoPaterno.Location = new System.Drawing.Point(128, 119);
             this.txtApellidoPaterno.Name = "txtApellidoPaterno";
             this.txtApellidoPaterno.Size = new System.Drawing.Size(251, 20);
@@ -289,7 +289,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNombre.BackColor = System.Drawing.SystemColors.Window;
             this.txtNombre.Location = new System.Drawing.Point(129, 87);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(251, 20);
@@ -307,7 +307,7 @@
             // 
             // txtID
             // 
-            this.txtID.BackColor = System.Drawing.SystemColors.Control;
+            this.txtID.BackColor = System.Drawing.SystemColors.Window;
             this.txtID.Location = new System.Drawing.Point(129, 60);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(148, 20);

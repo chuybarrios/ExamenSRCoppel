@@ -132,19 +132,19 @@ namespace ExamenSRCoppel.Classes.Controllers
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ID", this._id);
 
-                SqlDataReader sdr = cmd.ExecuteReader();
+                SqlDataReader reader = cmd.ExecuteReader();
 
-                while (sdr.Read())
+                while (reader.Read())
                 {
-                    this._nombre = sdr["NOMBRE"].ToString();
-                    this._apellidoPaterno = sdr["APELLIDO_PATERNO"].ToString();
-                    this._apellidoMaterno = sdr["APELLIDO_MATERNO"].ToString();
-                    this._email = sdr["EMAIL"].ToString();
-                    this._telefono = sdr["TELEFONO"].ToString();
-                    this._sexo = Convert.ToChar(sdr["SEXO"].ToString());
-                    this._fechaNacimiento = Convert.ToDateTime(sdr["FECHA_NACIMIENTO"].ToString());
-                    this._estatus = Convert.ToBoolean(sdr["ESTATUS"].ToString());
-                    this._rol = new Roles(Convert.ToInt32(sdr["ID_ROL"].ToString()));
+                    this._nombre = reader["NOMBRE"].ToString();
+                    this._apellidoPaterno = reader["APELLIDO_PATERNO"].ToString();
+                    this._apellidoMaterno = reader["APELLIDO_MATERNO"].ToString();
+                    this._email = reader["EMAIL"].ToString();
+                    this._telefono = reader["TELEFONO"].ToString();
+                    this._sexo = Convert.ToChar(reader["SEXO"].ToString());
+                    this._fechaNacimiento = Convert.ToDateTime(reader["FECHA_NACIMIENTO"].ToString());
+                    this._estatus = Convert.ToBoolean(reader["ESTATUS"].ToString());
+                    this._rol = new Roles(Convert.ToInt32(reader["ID_ROL"].ToString()));
                     this._cargado = true;
                 }
 
