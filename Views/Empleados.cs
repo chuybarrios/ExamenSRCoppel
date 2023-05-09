@@ -235,6 +235,7 @@ namespace ExamenSRCoppel.Views
             cbRol.Enabled = habilitar;
             cbEstatus.Enabled = habilitar;
             dtFechaNacimiento.Enabled = habilitar;
+            btnGuardar.Enabled = habilitar;
         }
 
         private void RegresarMenu()

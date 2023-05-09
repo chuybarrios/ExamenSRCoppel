@@ -66,14 +66,14 @@
             this.panel1.Controls.Add(this.lblIDEmpleado);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(618, 282);
+            this.panel1.Size = new System.Drawing.Size(422, 266);
             this.panel1.TabIndex = 0;
             // 
             // dtYear
             // 
             this.dtYear.CustomFormat = "yyyy";
             this.dtYear.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtYear.Location = new System.Drawing.Point(177, 201);
+            this.dtYear.Location = new System.Drawing.Point(130, 192);
             this.dtYear.Name = "dtYear";
             this.dtYear.Size = new System.Drawing.Size(80, 20);
             this.dtYear.TabIndex = 13;
@@ -85,7 +85,7 @@
             this.btnAgregar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(618, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(422, 47);
             this.toolStrip1.TabIndex = 12;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -102,7 +102,7 @@
             // txtCantidadEntregas
             // 
             this.txtCantidadEntregas.BackColor = System.Drawing.SystemColors.Control;
-            this.txtCantidadEntregas.Location = new System.Drawing.Point(177, 235);
+            this.txtCantidadEntregas.Location = new System.Drawing.Point(130, 226);
             this.txtCantidadEntregas.Name = "txtCantidadEntregas";
             this.txtCantidadEntregas.Size = new System.Drawing.Size(271, 20);
             this.txtCantidadEntregas.TabIndex = 11;
@@ -111,7 +111,7 @@
             // lblCantidadEntregas
             // 
             this.lblCantidadEntregas.AutoSize = true;
-            this.lblCantidadEntregas.Location = new System.Drawing.Point(46, 235);
+            this.lblCantidadEntregas.Location = new System.Drawing.Point(13, 226);
             this.lblCantidadEntregas.Name = "lblCantidadEntregas";
             this.lblCantidadEntregas.Size = new System.Drawing.Size(112, 13);
             this.lblCantidadEntregas.TabIndex = 10;
@@ -120,7 +120,7 @@
             // lblYear
             // 
             this.lblYear.AutoSize = true;
-            this.lblYear.Location = new System.Drawing.Point(46, 201);
+            this.lblYear.Location = new System.Drawing.Point(13, 192);
             this.lblYear.Name = "lblYear";
             this.lblYear.Size = new System.Drawing.Size(29, 13);
             this.lblYear.TabIndex = 8;
@@ -144,7 +144,7 @@
             "Octubre",
             "Noviembre",
             "Diciembre"});
-            this.cbMes.Location = new System.Drawing.Point(177, 167);
+            this.cbMes.Location = new System.Drawing.Point(130, 157);
             this.cbMes.Name = "cbMes";
             this.cbMes.Size = new System.Drawing.Size(271, 21);
             this.cbMes.TabIndex = 7;
@@ -152,7 +152,7 @@
             // lblMes
             // 
             this.lblMes.AutoSize = true;
-            this.lblMes.Location = new System.Drawing.Point(46, 167);
+            this.lblMes.Location = new System.Drawing.Point(13, 157);
             this.lblMes.Name = "lblMes";
             this.lblMes.Size = new System.Drawing.Size(30, 13);
             this.lblMes.TabIndex = 6;
@@ -161,7 +161,7 @@
             // txtRol
             // 
             this.txtRol.BackColor = System.Drawing.SystemColors.Control;
-            this.txtRol.Location = new System.Drawing.Point(177, 133);
+            this.txtRol.Location = new System.Drawing.Point(130, 123);
             this.txtRol.Name = "txtRol";
             this.txtRol.Size = new System.Drawing.Size(271, 20);
             this.txtRol.TabIndex = 5;
@@ -169,7 +169,7 @@
             // lblRol
             // 
             this.lblRol.AutoSize = true;
-            this.lblRol.Location = new System.Drawing.Point(46, 136);
+            this.lblRol.Location = new System.Drawing.Point(13, 126);
             this.lblRol.Name = "lblRol";
             this.lblRol.Size = new System.Drawing.Size(26, 13);
             this.lblRol.TabIndex = 4;
@@ -178,7 +178,7 @@
             // txtNombreEmpleado
             // 
             this.txtNombreEmpleado.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(177, 92);
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(130, 92);
             this.txtNombreEmpleado.Name = "txtNombreEmpleado";
             this.txtNombreEmpleado.Size = new System.Drawing.Size(271, 20);
             this.txtNombreEmpleado.TabIndex = 3;
@@ -186,7 +186,7 @@
             // lblNombreEmpleado
             // 
             this.lblNombreEmpleado.AutoSize = true;
-            this.lblNombreEmpleado.Location = new System.Drawing.Point(46, 99);
+            this.lblNombreEmpleado.Location = new System.Drawing.Point(13, 99);
             this.lblNombreEmpleado.Name = "lblNombreEmpleado";
             this.lblNombreEmpleado.Size = new System.Drawing.Size(114, 13);
             this.lblNombreEmpleado.TabIndex = 2;
@@ -195,7 +195,7 @@
             // txtIDEmpleado
             // 
             this.txtIDEmpleado.BackColor = System.Drawing.SystemColors.Control;
-            this.txtIDEmpleado.Location = new System.Drawing.Point(177, 61);
+            this.txtIDEmpleado.Location = new System.Drawing.Point(130, 61);
             this.txtIDEmpleado.Name = "txtIDEmpleado";
             this.txtIDEmpleado.Size = new System.Drawing.Size(271, 20);
             this.txtIDEmpleado.TabIndex = 1;
@@ -205,7 +205,7 @@
             // lblIDEmpleado
             // 
             this.lblIDEmpleado.AutoSize = true;
-            this.lblIDEmpleado.Location = new System.Drawing.Point(46, 64);
+            this.lblIDEmpleado.Location = new System.Drawing.Point(13, 64);
             this.lblIDEmpleado.Name = "lblIDEmpleado";
             this.lblIDEmpleado.Size = new System.Drawing.Size(71, 13);
             this.lblIDEmpleado.TabIndex = 0;
@@ -213,9 +213,9 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(213, 300);
+            this.btnGuardar.Location = new System.Drawing.Point(42, 284);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(200, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(180, 23);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -223,9 +223,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(430, 300);
+            this.btnCancelar.Location = new System.Drawing.Point(233, 284);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(200, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(180, 23);
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -235,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 334);
+            this.ClientSize = new System.Drawing.Size(443, 319);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panel1);
