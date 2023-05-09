@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.catalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -137,7 +138,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(65, 3);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.ReadOnly = true;
-            this.txtUsuario.Size = new System.Drawing.Size(238, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(180, 20);
             this.txtUsuario.TabIndex = 1;
             this.txtUsuario.Text = "Nombre Usuario";
             // 
@@ -169,6 +170,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

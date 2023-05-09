@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Movimientos));
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtYear = new System.Windows.Forms.DateTimePicker();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -240,6 +241,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Movimientos";
