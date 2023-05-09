@@ -121,7 +121,7 @@
     <EmbeddedResource Include="Views\Pagos.resx">
       <DependentUpon>Pagos.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Documentacion\Documentacion Examen.docx" />
+    <None Include="Documentacion\Documentacion.docx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
