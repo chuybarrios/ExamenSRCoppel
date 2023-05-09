@@ -144,6 +144,28 @@
     <Content Include="Icon\Editar40.bmp" />
     <Content Include="Icon\pago-en-efectivo.png" />
     <Content Include="Icon\Rinku_icon.ico" />
+    <Content Include="Scripts\CREATE_DATABASE_Examen_Coppel.sql" />
+    <Content Include="Scripts\CREATE_TABLE_EMPLEADOS.sql" />
+    <Content Include="Scripts\CREATE_TABLE_IMPUESTOS.sql" />
+    <Content Include="Scripts\CREATE_TABLE_MOVIMIENTOS.sql" />
+    <Content Include="Scripts\CREATE_TABLE_PAGOS.sql" />
+    <Content Include="Scripts\CREATE_TABLE_ROLES.sql" />
+    <Content Include="Scripts\CREATE_TABLE_USUARIOS.sql" />
+    <Content Include="Scripts\INSERTAR IMPUESTOS.sql" />
+    <Content Include="Scripts\INSERTAR ROLES.sql" />
+    <Content Include="Scripts\INSERTAR USUARIOS.sql" />
+    <Content Include="Scripts\SP_CONSULTA_EMPLEADO_POR_ID.sql" />
+    <Content Include="Scripts\SP_CONSULTA_IMPUESTOS.sql" />
+    <Content Include="Scripts\SP_CONSULTA_MOVIMIENTO_POR_EMPLEADO_MES_ANIO.sql" />
+    <Content Include="Scripts\SP_CONSULTA_MOVIMIENTO_POR_ID.sql" />
+    <Content Include="Scripts\SP_CONSULTA_PAGO_POR_EMPLEADO_ROL_MES_ANIO.sql" />
+    <Content Include="Scripts\SP_CONSULTA_PAGO_POR_ID.sql" />
+    <Content Include="Scripts\SP_CONSULTA_ROLES.sql" />
+    <Content Include="Scripts\SP_CONSULTA_ROL_POR_ID.sql" />
+    <Content Include="Scripts\SP_CONSULTA_USUARIO.sql" />
+    <Content Include="Scripts\SP_GUARDAR_EMPLEADO.sql" />
+    <Content Include="Scripts\SP_GUARDAR_MOVIMIENTOS.sql" />
+    <Content Include="Scripts\SP_GUARDAR_PAGOS.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
