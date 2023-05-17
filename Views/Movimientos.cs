@@ -16,6 +16,8 @@ namespace ExamenSRCoppel.Views
     {
         #region Variables Privadas
         private static Classes.Controllers.Empleado empleado;
+        private bool bEdita = false;
+        private int iID;
         #endregion
         public Movimientos()
         {
@@ -36,8 +38,11 @@ namespace ExamenSRCoppel.Views
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            bEdita = false;
             LimpiarControles();
             HabilitarControles(true);
+            txtNombreEmpleado.Enabled = false;
+            txtRol.Enabled = false;
         }
 
         private void txtIDEmpleado_KeyPress(object sender, KeyPressEventArgs e)
@@ -66,14 +71,28 @@ namespace ExamenSRCoppel.Views
         {
             try
             {
-                Classes.Controllers.Movimientos movimientos = new Classes.Controllers.Movimientos();
-                movimientos.Empleado = empleado;
-                movimientos.FechaRegistro = DateTime.Now;
-                movimientos.Mes = cbMes.SelectedIndex;
-                movimientos.Year = dtYear.Value.Year;
-                movimientos.CantidadEntregas = Convert.ToInt32(txtCantidadEntregas.Text);
+                Classes.Controllers.Movimientos movimientos;
 
-                if (movimientos.GuardarMovimiento())
+                if (bEdita)
+                {
+                    movimientos = new Classes.Controllers.Movimientos(iID);
+                    movimientos.Empleado = empleado;
+                    movimientos.FechaRegistro = DateTime.Now;
+                    movimientos.Mes = cbMes.SelectedIndex;
+                    movimientos.Year = dtYear.Value.Year;
+                    movimientos.CantidadEntregas = Convert.ToInt32(txtCantidadEntregas.Text);
+                }
+                else
+                {
+                    movimientos = new Classes.Controllers.Movimientos();
+                    movimientos.Empleado = empleado;
+                    movimientos.FechaRegistro = DateTime.Now;
+                    movimientos.Mes = cbMes.SelectedIndex;
+                    movimientos.Year = dtYear.Value.Year;
+                    movimientos.CantidadEntregas = Convert.ToInt32(txtCantidadEntregas.Text);
+                }
+
+                if (movimientos.GuardarMovimiento(bEdita))
                     MessageBox.Show("Movimiento registrado correctamente.");
                 else
                     MessageBox.Show("Ocurrió un error al guardar el movimiento.");
@@ -83,6 +102,28 @@ namespace ExamenSRCoppel.Views
             catch (Exception ex)
             {
                 MessageBox.Show("Ocurrió un error al guardar el movimiento:" + ex.Message);
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            LimpiarControles();
+            HabilitarControles(true);
+            txtNombreEmpleado.Enabled = false;
+            txtRol.Enabled = false;
+            bEdita = true;
+        }
+
+        private void dtYear_ValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                CargarMovimiento();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error al cargar el movimiento:" + ex.Message);
             }
         }
         #endregion
@@ -115,6 +156,17 @@ namespace ExamenSRCoppel.Views
             menu.ShowDialog();
             this.Close();
         }
+
+        private void CargarMovimiento()
+        {
+            Classes.Controllers.Movimientos movimientos = new Classes.Controllers.Movimientos();
+            movimientos = movimientos.ObtenerMovimientoPorEmpleadoMesYear(Convert.ToInt32(txtIDEmpleado.Text), cbMes.SelectedIndex, dtYear.Value.Year);
+            
+            txtCantidadEntregas.Text = movimientos.CantidadEntregas.ToString();
+            iID = movimientos.ID;
+        }
+
+
 
 
 

@@ -20,6 +20,7 @@ namespace ExamenSRCoppel.Classes.Controllers
         private int _year;
         private int _cantidadEntregas;
         private DateTime _fechaRegistro;
+        private bool _cargado;
         private dbConnection conDB = new dbConnection();
         #endregion
 
@@ -72,12 +73,17 @@ namespace ExamenSRCoppel.Classes.Controllers
             get { return _fechaRegistro; }
             set { _fechaRegistro = value; }
         }
+        public bool Cargado
+        {
+            get { return _cargado; }
+        }
         #endregion
 
         #region Metodos Privados
         private void Cargar()
         {
             conDB = new dbConnection();
+            this._cargado = false;
 
             try
             {
@@ -96,6 +102,7 @@ namespace ExamenSRCoppel.Classes.Controllers
                     this._year = Convert.ToInt32(reader["YEAR_MOVIMIENTO"].ToString());
                     this._cantidadEntregas = Convert.ToInt32(reader["CANTIDAD_ENTREGAS"].ToString());
                     this._fechaRegistro = Convert.ToDateTime(reader["FECHA_REGISTRO"].ToString());
+                    this._cargado = true;
                 }
 
                 cmd.Dispose();
@@ -110,7 +117,7 @@ namespace ExamenSRCoppel.Classes.Controllers
         #endregion
 
         #region Metodos Publicos
-        public bool GuardarMovimiento()
+        public bool GuardarMovimiento(bool bEdita)
         {
             conDB = new dbConnection();
             bool registrado = true;
@@ -128,6 +135,11 @@ namespace ExamenSRCoppel.Classes.Controllers
                 cmd.Parameters.AddWithValue("@YEAR", this._year);
                 cmd.Parameters.AddWithValue("@CANTIDAD_ENTREGAS", this._cantidadEntregas);
                 cmd.Parameters.AddWithValue("@FECHA_REGISTRO", this._fechaRegistro);
+
+                if (bEdita)
+                    cmd.Parameters.AddWithValue("@ID_MOVIMIENTO", this._id);
+                else
+                    cmd.Parameters.AddWithValue("@ID_MOVIMIENTO", 0);
 
                 var returnParameter = cmd.Parameters.Add("@RESULT", SqlDbType.Int);
                 returnParameter.Direction = ParameterDirection.ReturnValue;
